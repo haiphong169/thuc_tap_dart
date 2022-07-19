@@ -1,28 +1,3 @@
-class Student {
-  const Student(this.firstName, this.lastName, this.grade);
-
-  final String firstName;
-  final String lastName;
-  final int grade;
-
-  @override
-  String toString() {
-    // TODO: implement toString
-    return '$firstName $lastName: $grade';
-  }
-}
-
-class Sphere {
-  const Sphere({required double radius})
-      : assert(radius > 0),
-        _radius = radius;
-  final double _radius;
-  static const pi = 3.14;
-
-  double get surface => 4 * pi * _radius * _radius;
-  double get volume => 4 / 3 * pi * _radius * _radius * _radius;
-}
-
 class Person {
   const Person({required this.overtime});
   final int overtime;
